@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="./assets/logo.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                   <li class="hover-links nav-items" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                   <li class="hover-links nav-items" id="finance" onclick="onNavItemClick('finance')">Finanace</li>
+                   <li class="hover-links nav-items" id="politics" onclick="onNavItemClick('politics')">politics</li>
+                   
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input  id="search-text" type="text" class="news-input" placeholder="eg.science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+            <template id="template-news-cards">
+    
+            <div class="cards">
+                <div class="cards-header">
+                    <img src="https://placehold.co/400x200.png" alt="news-img" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is title</h3>
+                    <h6 class="news-source" id="news-source">end gadgets</h6>
+                    <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fuga alias, explicabo consequuntur distinctio sequi. Laboriosam quidem non sapiente eaque quia vero tempore? Eveniet nihil culpa, neque ex fugiat optio.</p>
+                </div>
+            </div>
+        </template>
+        
+        <script src="script.js">
+
+        </script>
+    
+</body>
+</html>
